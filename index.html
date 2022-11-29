@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Spin Wheel</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="app-wrapper">
+  <div class="wheel-wrapper">
+    <p class="notification"></p>
+    <canvas onclick="spin();" id="canvas" width="500" height="500"></canvas>
+    <p class="winner"></p>
+  </div>
+  <div class="players-list-wrapper">
+    <form>
+      <label>
+        <input type="text" />
+      </label>
+      <input type="submit" value="Add">
+    </form>
+    <ul>
+
+    </ul>
+  </div>
+</div>
+<img src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/spinthewheel_arrow.svg" width="50" height="50" id="arrow">
+
+<img src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/9stacks_purple.svg" width="30" height="30" id="center-logo">
+<script src="./js/main.js"></script>
+</body>
+</html>
