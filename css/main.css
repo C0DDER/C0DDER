@@ -10,6 +10,7 @@ html, body {
 body {
   background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");
   animation: snow linear 50s;
+  animation-iteration-count: infinite;
 }
 
 img {
