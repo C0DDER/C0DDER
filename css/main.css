@@ -7,14 +7,28 @@ html, body {
   background-color:  #b0d0ff;
   height: 100vh;
 }
-body {
-  background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");
-  animation: snow linear 50s;
-  animation-iteration-count: infinite;
+/*body {*/
+/*  background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");*/
+/*  animation: snow linear 40s;*/
+/*  animation-iteration-count: infinite;*/
+/*}*/
+
+
+.snow-container {
+  width: 100%;
 }
 
-img {
-  display: none;
+.snow {
+  position: absolute;
+  animation: snow 5s linear infinite;
+}
+
+.snow:nth-child(2) {
+  right: 30%;
+}
+
+.snow:nth-child(3) {
+  right: 0;
 }
 
 .winner {
@@ -106,14 +120,21 @@ li button {
   text-align: center;
 }
 
+.display-none {
+  display: none;
+}
+
 /* WINTER ANIMATION */
 
 @keyframes snow {
   0% {
-    background-position: 0 0, 0 0, 0 0;
+    top: 0;
+  }
+  50% {
+    top: 10%;
   }
   100% {
-    background-position: 600px 2000px, 400px 1500px, 100px 1000px;
+    top: 18%;
   }
 
 }

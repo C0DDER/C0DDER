@@ -7,28 +7,35 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<div class="animation"></div>
-<div class="app-wrapper">
-  <div class="wheel-wrapper">
-    <p class="notification"></p>
-    <canvas onclick="spin();" id="canvas" width="500" height="500"></canvas>
-    <p class="winner"></p>
-  </div>
-  <div class="players-list-wrapper">
-    <form>
-      <label>
-        <input type="text" />
-      </label>
-      <input type="submit" value="Add">
-    </form>
-    <ul>
 
-    </ul>
-  </div>
+<div class="snow-container">
+  <div class="snow"><img src="img/snow1.png"></div>
+  <div class="snow"><img src="img/snow2.png"></div>
+  <div class="snow"><img src="img/snow3.png"></div>
 </div>
-<img src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/spinthewheel_arrow.svg" width="50" height="50" id="arrow">
 
-<img src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/9stacks_purple.svg" width="30" height="30" id="center-logo">
+
+  <div class="app-wrapper">
+    <div class="wheel-wrapper">
+      <p class="notification"></p>
+      <canvas onclick="spin();" id="canvas" width="500" height="500"></canvas>
+      <p class="winner"></p>
+    </div>
+    <div class="players-list-wrapper">
+      <form>
+        <label>
+          <input type="text" />
+        </label>
+        <input type="submit" value="Add">
+      </form>
+      <ul>
+      </ul>
+    </div>
+  </div>
+
+  <img class="display-none" src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/spinthewheel_arrow.svg" width="50" height="50" id="arrow">
+
+  <img class="display-none" src="https://massets1.9stacks.com/assets/pwa-icons/spin-the-wheel/9stacks_purple.svg" width="30" height="30" id="center-logo">
 <script src="./js/main.js"></script>
 </body>
 </html>
