@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-body {
+
+html, body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background-color:  #b0d0ff;
   height: 100vh;
+}
+body {
+  background-image: url("../img/snow1.png"), url("../img/snow2.png"), url("../img/snow3.png");
+  animation: snow linear 50s;
+  animation-iteration-count: infinite;
 }
 
 img {
@@ -16,7 +20,7 @@ img {
 .winner {
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: #0060ff;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
@@ -100,4 +104,16 @@ li button {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   text-align: center;
+}
+
+/* WINTER ANIMATION */
+
+@keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 600px 2000px, 400px 1500px, 100px 1000px;
+  }
+
 }
