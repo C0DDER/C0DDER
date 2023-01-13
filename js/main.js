@@ -125,17 +125,10 @@ function rotateWheel() {
 
 function stopRotateWheel() {
   winner.textContent = '';
-  // clearTimeout(spinTimeout);
   const degrees = startAngle * 180 / Math.PI + 90;
   const arcd = arc * 180 / Math.PI;
   const index = Math.floor((360 - degrees % 360) / arcd);
-  console.log(index);
   winner.textContent = players[index];
-  // ctx.save();
-  // ctx.font = 'bold 30px Helvetica, Arial';
-  const text = players[index]
-  // ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
-  // ctx.restore();
 }
 
 function easeOut(t, b, c, d) {
