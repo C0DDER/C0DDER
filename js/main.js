@@ -71,7 +71,7 @@ function drawRouletteWheel() {
       ctx.fillStyle = textColor;
       ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius,
         250 + Math.sin(angle + arc / 2) * textRadius);
-      ctx.rotate((angle + arc / 2 + Math.PI / 2) + 30);
+      ctx.rotate((angle - 1.6 + arc / 2 + Math.PI / 2));
       const text = players[i];
       ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
       ctx.restore();
@@ -88,17 +88,13 @@ function drawRouletteWheel() {
     ctx.save();
     const arrowImage = document.getElementById('arrow');
     ctx.beginPath();
-    // ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
-    ctx.drawImage(arrowImage, 250 - 4 - 25, 250 - (outsideRadius + 5) - 25, 50, 50);
-    // ctx.drawImage(arrowImage, 250 - (outsideRadius + 5) - 25, 250 - 25, 50, 50);
+    ctx.drawImage(arrowImage, 210, 250 - (outsideRadius + 5) - 25, 80, 80);
     ctx.restore();
 
-    // center logo
     const logoImage = document.getElementById('center-logo');
     ctx.beginPath();
-    // ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
-    ctx.drawImage(logoImage, 250 - 25, 250 - 25, 50, 50);
-
+    ctx.drawImage(logoImage, 210, 211, 80, 80);
+    ctx.restore()
   }
 }
 
@@ -141,8 +137,8 @@ drawRouletteWheel();
 
 function renderPlayers() {
   playersList.innerHTML = '';
-  playersList.innerHTML = players.reduce((markup, player) => {
-    markup += `<li>${player}<button>+</button></li>`;
+  playersList.innerHTML = players.reduce((markup, player, index) => {
+    markup += `<li>${++index}. ${player}<button>+</button></li>`;
     return markup
   }, '')
 }

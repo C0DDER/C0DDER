@@ -1,0 +1,31 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g transform="rotate(90 32 32)" data-name="06-Play" id="_06-Play">
+   <polygon id="svg_1" fill="#15507a" points="21 38 21 63 17 59 17 38 21 38"/>
+   <polygon id="svg_2" fill="#15507a" points="21 1 21 26 17 26 17 5 21 1"/>
+   <polygon id="svg_3" fill="#48befd" points="63 32 21 63 21 38 25 38 25 46 29 48 47 32 29 16 25 18 25 26 21 26 21 1 63 32"/>
+   <polygon id="svg_4" fill="#2a84c9" points="25 3.952 21 1 21 26 25 26 25 18 25 3.952"/>
+   <path id="svg_5" fill="#2a84c9" d="m47,32l-18,16l-4,-2l0,-8l-4,0l0,25l42,-31l-13.106,6.553a2,2 0 0 1 -2.894,-1.789l0,-4.764z"/>
+   <rect id="svg_6" fill="#1c69a1" height="4" width="4" y="38" x="21"/>
+   <rect id="svg_7" fill="#fd9c04" height="12" width="4" y="26" x="1"/>
+   <polygon id="svg_8" fill="#fa5f07" points="29 38 29 48 25 46 25 38 29 38"/>
+   <polygon id="svg_9" fill="#fab503" points="29 16 29 26 25 26 25 18 29 16"/>
+   <polygon id="svg_10" fill="#fab503" points="47 32 29 48 29 38 25 38 21 38 17 38 5 38 5 26 17 26 21 26 25 26 29 26 29 16 47 32"/>
+   <path id="svg_11" fill="#ffdb02" d="m29,16l0,10l-17,0a2,2 0 0 0 0,4l24,0l6.745,5.782l4.255,-3.782l-18,-16z"/>
+   <rect id="svg_12" fill="#ed9204" height="8" width="4" y="30" x="1"/>
+   <path id="svg_13" fill="#d65106" d="m25,38l0,8l2,1l0,-5a2,2 0 0 1 2,-2l0,-2l-4,0z"/>
+   <path id="svg_14" fill="#ed9204" d="m27,22l0,-5l-2,1l0,8l4,0l0,-2a2,2 0 0 1 -2,-2z"/>
+   <line id="svg_15" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" y2="23" x2="21" y1="21" x1="21"/>
+   <polyline id="svg_16" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="31 55.619 63 32 21 1 21 19"/>
+   <polyline id="svg_17" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="21 41 21 63 29.129 57"/>
+   <polyline id="svg_18" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="17 38 17 59 21 63"/>
+   <polyline id="svg_19" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="17 26 17 5 21 1"/>
+   <polyline id="svg_20" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="8 26 5 26 5 38 29 38 29 48 47 32 29 16 29 26 10 26"/>
+   <polyline id="svg_21" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="29 16 25 18 25 26"/>
+   <polyline id="svg_22" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="25 38 25 46 29 48"/>
+   <polyline id="svg_23" stroke-width="2px" stroke-linejoin="round" stroke="#000" fill="none" points="5 26 1 26 1 38 5 38"/>
+  </g>
+ </g>
+</svg>
