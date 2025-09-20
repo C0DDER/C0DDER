@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Deploy over SSH
         uses: appleboy/ssh-action@v1
@@ -21,8 +21,16 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /home/deploy/project
-            git pull origin master
+            set -e
+            if [ -d "/home/deploy/project/.git" ]; then
+              echo "Updating existing repository..."
+              cd /home/deploy/project
+              git pull origin master
+            else
+              echo "Cloning new repository..."
+              git clone -b master https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git /home/deploy/project
+              cd /home/deploy/project
+            fi
+
             docker compose down
             docker compose up -d --build
-
